@@ -1,0 +1,24 @@
+[submodule "src/external/getopt9"]
+	path = src/include/getopt9
+	url = git@github.com:wym6912/getopt9.git
+[submodule "src/external/abpoa"]
+	path = src/external/abpoa
+	url = git@github.com:wym6912/abpoa.git
+[submodule "src/external/mafft-twomodule"]
+	path = src/external/subwmsa
+	url = git@github.com:wym6912/mafft-twomodule.git
+[submodule "staccato"]
+	path = src/external/threadpool
+	url = git@github.com:wym6912/staccato.git
+[submodule "src/external/SSW"]
+	path = src/external/ssw
+	url = git@github.com:wym6912/SSW.git
+[submodule "src/external/subhalign3"]
+	path = src/external/subhalign
+	url = git@github.com:wym6912/subhalign3.git
+[submodule "submafft"]
+	path = src/external/submafft
+	url = git@github.com:wym6912/submafft.git
+[submodule "src/external/kseq"]
+	path = src/external/kseq
+	url = git@github.com:wym6912/kseq.git

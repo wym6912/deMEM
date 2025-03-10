@@ -1,0 +1,12 @@
+{
+    "align_method": 0,
+    "all_wmsa": true,
+    "cluster_method": 0,
+    "highsim": false,
+    "merge_method": 0,
+    "path": "swap/",
+    "threshold_block": 10,
+    "wmsa_align_method": 0,
+    "wmsa_cluster_method": 0,
+    "wmsa_merge_method": 0
+}
