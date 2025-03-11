@@ -22,3 +22,6 @@
 [submodule "src/external/kseq"]
 	path = src/external/kseq
 	url = git@github.com:wym6912/kseq.git
+[submodule "src/external/SplitMEM_BWT"]
+	path = src/external/splitmem
+	url = git@github.com:wym6912/SplitMEM_BWT.git
