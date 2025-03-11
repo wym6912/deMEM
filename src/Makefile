@@ -35,9 +35,11 @@ LIBOBJ_MAIN = lib/program_spawn.o lib/ext_prog_config.o lib/libfile_v2.o
 
 LIBSSW = external/ssw/src/ssw.o
 
-SUBMAFFT_TARGETS = profilealign fragalign profile_two_align
+SUBWMSA_TARGETS = profilealign fragalign profile_two_align
 
 ABPOA_TRAGETS = abpoa abpoa_profile
+
+SUBMAFFT_DIR = external/submafft/Linux/
 
 ifeq ($(HAS_64), 1)
 	TARGETS = block_dispatch samemalign_main seq_remove_char splitmem
@@ -68,14 +70,15 @@ endif
 all:${TARGETS_ALL}
 
 clean:
-	${RM} *.o external/*.o lib/*.o external/malloc_count/*.o ${TARGETS} $(SUBMAFFT_TARGETS) $(ABPOA_TRAGETS)
+	${RM} *.o external/*.o lib/*.o external/malloc_count/*.o ${TARGETS} $(SUBWMSA_TARGETS) $(ABPOA_TRAGETS)
 	make -C external/ssw/src/ clean
 	make -C external/subwmsa clean
-	make -C external/abPOA clean
+	make -C external/abpoa clean
 
 install: all
 	mkdir -p $(BINDIR)
-	cp $(TARGETS) $(SUBMAFFT_TARGETS) $(BINDIR)
+	cp $(TARGETS) $(SUBWMSA_TARGETS) $(BINDIR)
+	cp -rf $(SUBMAFFT_DIR) $(PREFIX)
 	@echo Install to $(BINDIR) done.
 
 
@@ -89,12 +92,12 @@ ssw:
 	make -C external/ssw/src/ -j$(THREADS) ssw.o
 
 subwmsa:
-	make -C external/subwmsa -j$(THREADS) $(SUBMAFFT_TARGETS)
-	@for filename in $(SUBMAFFT_TARGETS); do cp external/subwmsa/$$filename .; done
+	make -C external/subwmsa -j$(THREADS) $(SUBWMSA_TARGETS)
+	@for filename in $(SUBWMSA_TARGETS); do cp external/subwmsa/$$filename .; done
 
 abpoa:
-	make -C external/abPOA -j$(THREADS) $(ABPOA_TRAGETS)
-	@for filename in $(ABPOA_TRAGETS); do cp external/abPOA/bin/$$filename .; done
+	make -C external/abpoa -j$(THREADS) $(ABPOA_TRAGETS)
+	@for filename in $(ABPOA_TRAGETS); do cp external/abpoa/bin/$$filename .; done
 
 lib/libblockaligner.o: lib/libblockaligner.cpp ssw
 	$(CPP) $(CPPFLAGS) -c -o $@ $< $(LIBSSW)
