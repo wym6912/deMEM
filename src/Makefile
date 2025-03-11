@@ -78,7 +78,7 @@ clean:
 install: all
 	mkdir -p $(BINDIR)
 	cp $(TARGETS) $(SUBWMSA_TARGETS) $(BINDIR)
-	cp -rf $(SUBMAFFT_DIR) $(PREFIX)
+	cp -rf $(SUBMAFFT_DIR)/* $(PREFIX)
 	@echo Install to $(BINDIR) done.
 
 
