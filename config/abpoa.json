@@ -1,0 +1,10 @@
+{
+    "abpoa_cluster_method": 0,
+    "align_method": 3,
+    "all_abpoa": true,
+    "cluster_method": 2,
+    "highsim": false,
+    "merge_method": 2,
+    "path": "swap/",
+    "threshold_block": 100
+}

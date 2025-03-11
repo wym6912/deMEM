@@ -1,0 +1,12 @@
+{
+    "align_method": 1,
+    "all_mafft": true,
+    "cluster_method": 1,
+    "highsim": true,
+    "mafft_align_method": 0,
+    "mafft_cluster_method": 0,
+    "mafft_merge_method": 0,
+    "merge_method": 1,
+    "path": "swap/",
+    "threshold_block": 100
+}
