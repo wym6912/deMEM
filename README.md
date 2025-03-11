@@ -68,7 +68,12 @@ Example:
         samemalign_main --in seq.fasta --out seq_out.fasta
 ```
 
-We strongly recommended run the program by determined json files, which in `config` folder.
+We strongly recommended run the program by determined json files, which in `config` folder. You can test by this command:
+
+```bash
+# Install by the following sections 
+samemalign_main --json config/wmsa.json --in test/seq_1.fasta --out test/seq_1.ans.fasta
+```
 
 ## Installation
 
@@ -145,7 +150,7 @@ samemalign_main -h
 
 ### Windows - from Visual Studio 2022 (Not Recommended)
 
-1. First, install git, and download the whole project with submodules:
+1. Firstly, install git, and download the whole project with submodules:
 
 ```powershell
 git clone https://github.com/malabz/demem.git --recursive
@@ -162,3 +167,16 @@ git submodule foreach git submodule update
 - Open `memalign.sln` in `Visual Studio 2022`, then switch it to `Release` mode (Select `Properties`, choose `Configuration Properties`, then press `Configuration Manager...` button, change `Active Solution configuration` to `Release`), choose `Build` -> `Build Solution`. If failed, please try compile project one by one.
 - Open `x64\Release` folder, copy all the `.exe` and `.dll` files to `x64\samemalign_env\bin`.
 - Copy `src\external\submafft\windows\{profiles_wrapper.exe,src}` file/folder to `x64\samemalign_env`.
+
+## Dataset
+
+The data used in this article is in [zenodo](https://doi.org/10.5281/zenodo.14989520).
+
+## Citation
+
+
+## Contacts
+
+If you find any bug, welcome to contact us on the [issues page](https://github.com/malabz/deMEM/issues) or [email us](mailto:wym6912@outlook.com).
+
+More tools and infomation can visit our [github](https://github.com/malabz).
