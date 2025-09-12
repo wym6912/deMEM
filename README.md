@@ -175,8 +175,13 @@ The data used in this article is in [zenodo](https://doi.org/10.5281/zenodo.1498
 ## Citation
 
 
+## LICENSE
+
+This project is licensed under the MIT License, except for the files in the `test/` directory, which are under the CC0 1.0 Public Domain Dedication.
+
 ## Contacts
 
 If you find any bug, welcome to contact us on the [issues page](https://github.com/malabz/deMEM/issues) or [email us](mailto:wym6912@outlook.com).
 
 More tools and infomation can visit our [github](https://github.com/malabz).
+
