@@ -172,6 +172,10 @@ git submodule foreach git submodule update
 
 The data used in this article is in [zenodo](https://doi.org/10.5281/zenodo.14989520).
 
+## Figures used in this manuscript
+
+See `figures` folder for more information.
+
 ## Citation
 
 
@@ -184,4 +188,3 @@ This project is licensed under the MIT License, except for the files in the `tes
 If you find any bug, welcome to contact us on the [issues page](https://github.com/malabz/deMEM/issues) or [email us](mailto:wym6912@outlook.com).
 
 More tools and infomation can visit our [github](https://github.com/malabz).
-
