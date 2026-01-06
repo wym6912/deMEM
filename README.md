@@ -178,6 +178,7 @@ See `figures` folder for more information.
 
 ## Citation
 
+Wei, Y., Huang Z., Zhang P., Wang Y., Li Y., Yu L. & Zou Q. (2026). deMEM: a novel divide-and-conquer framework based on de Bruijn graph for scalable multiple sequence alignment. GigaScience, giaf163.
 
 ## LICENSE
 
