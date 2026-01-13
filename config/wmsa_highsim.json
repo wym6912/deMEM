@@ -5,6 +5,7 @@
     "highsim": true,
     "merge_method": 0,
     "path": "swap/",
+    "threshold":100,
     "threshold_block": 100,
     "wmsa_align_method": 0,
     "wmsa_cluster_method": 0,

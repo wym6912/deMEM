@@ -6,5 +6,6 @@
     "highsim": true,
     "merge_method": 2,
     "path": "swap/",
+    "threshold":100,
     "threshold_block": 100
 }
