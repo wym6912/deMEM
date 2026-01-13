@@ -8,5 +8,6 @@
     "mafft_merge_method": 1,
     "merge_method": 1,
     "path": "swap/",
+    "threshold":100,
     "threshold_block": 100
 }
