@@ -75,6 +75,8 @@ We strongly recommended run the program by determined json files, which in `conf
 samemalign_main --json config/wmsa.json --in test/seq_1.fasta --out test/seq_1.ans.fasta
 ```
 
+**Hint: When the default threshold (100) in the JSON file under the `config` folder is not appropriate, please adjust it to a larger value for the alignment process.**
+
 ## Installation
 
 ### Linux/WSL (Windows Subsystem for Linux) - from Anaconda (Recommended)
